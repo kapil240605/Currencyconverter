@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    background-color: rgb(180, 197, 230);
+    padding: 23px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: rgb(125, 121, 199);
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+div.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 23px;
+    font-size: 24px;
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    max-width: 80vw;
+    background-color: rgb(234, 241, 235);
+    margin: auto;
+}
+
+.container h1,
+h2 {
+    margin: 23px 0;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form input[type='number'],
+select {
+    font-size: 25px;
+    margin: 23px 0px;
+    width: 20vw;
+}
+
+.container form label {
+    font-size: 25px;
+    margin-bottom: 23px;
+}
+
+.btn {
+    width: 144px;
+    padding: 5px 11px;
+    font-size: 20px;
+    background: rgb(105, 81, 105);
+    color: white;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.output table {
+    width: 50vw;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(228, 188, 139);
+}
+
+@media (max-width: 600px) {
+    nav {
+        font-size: 14px;
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 13px;
+    }
+
+    .container {
+        max-width: 95vw;
+    }
+
+    .container form input[type='number'],
+    select,
+    label {
+        width: 80vw;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins&display=swap"
+        rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <nav>
+        <div class="logo">WorldConverter</div>
+        <ul>
+            <li><a href="/Home">Home</a></li>
+            <li><a href="/About us">About us</a></li>
+            <li><a href="/Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Choose a currency to convert</h1>
+        <form action="/action.php" method="get">
+            <label for="quantity">Enter a quantity : </label>
+            <input type="number" name="quantity" min="1" max="10">
+            <label for="currency">Choose a currency : </label>
+            <select name="currency">
+                <option value="INR">India</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Europe</option>
+            </select>
+
+            <button class="btn" type="submit">Submit</button>
+        </form>
+        <div class="output">
+            <h2>Here is your converted value in different currencies</h2>
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Currency Code</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &copy; All rights reserved
+    </footer>
+
+    <script>
+
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
